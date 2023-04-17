@@ -1,0 +1,42 @@
+﻿<Window x:Class="ErovizioGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ErovizioGUI"
+        mc:Ignorable="d"
+        Title="Eurovizio" Height="450" Width="800" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="16*"/>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="751*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Eurovízió nyertesei" FontSize="24" FontWeight="Bold" Margin="10" Grid.ColumnSpan="4"/>
+        <StackPanel Orientation="Horizontal" Margin="10" Grid.Row="1" Grid.ColumnSpan="4">
+            <Label x:Name="labelHelyezes" Content="Helyezés: "/>
+            <Label x:Name="HelyezesLabel"/>
+            <Label x:Name="labelPontszam" Content="Pontszám: "/>
+            <Label x:Name="PontszamLabel"/>
+            <Button Content="Átlag" Click="Button_Click" Margin="10,0,0,0"/>
+            <Label Content="Átlagos pontszám: "/>
+            <Label x:Name="AtlagPontszamLabel"/>
+        </StackPanel>
+        <DataGrid x:Name="datagridDal" SelectionMode="Single" Margin="10" Grid.Row="2" Grid.ColumnSpan="4" SelectionChanged="datagridDal_SelectionChanged" Loaded="datagridDal_Loaded" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Év" Binding="{Binding ev}" Width="50"/>
+                <DataGridTextColumn Header="Előadó" Binding="{Binding eloado}" Width="*"/>
+                <DataGridTextColumn Header="Cím" Binding="{Binding eredeti}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+
+    </Grid>
+</Window>

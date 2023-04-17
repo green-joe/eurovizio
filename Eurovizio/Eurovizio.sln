@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33328.57
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eurovizio", "Eurovizio\Eurovizio.csproj", "{57793BC4-3BE0-4697-9448-98D92B978448}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57793BC4-3BE0-4697-9448-98D92B978448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57793BC4-3BE0-4697-9448-98D92B978448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57793BC4-3BE0-4697-9448-98D92B978448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57793BC4-3BE0-4697-9448-98D92B978448}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9E8E82B-5966-4E07-A39A-EF210D6FCC99}
+	EndGlobalSection
+EndGlobal
